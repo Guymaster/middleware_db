@@ -7,7 +7,46 @@
     <title>BiharBook</title>
 </head>
 <body>
+    <header class="header">
+        <h1>Bienvenue</h1>
+    </header>
     
-    <script src="./index.js"></script>
+    <div class="create-post" style="display: none;">
+        <div class="post-header">
+            <img src="/img/img1.jpg" alt="Photo de profil" class="profile-pic"> <!-- Remplacez profil.jpg par le chemin de votre photo de profil -->
+            <textarea placeholder="Quoi de neuf ?" class="post-input"></textarea>
+        </div>
+        <button class="post-button">Publier</button>
+    </div>
+
+    <div class="posts-box">
+        
+    </div>
+
+    <div class="modal active modal-input-name">
+        <div class="modal-content">
+            <h2>Entrez votre nom</h2>
+            <input type="text" placeholder="Ex: Paul">
+            <div style="display: flex; justify-content: end;">
+                <div class="btn-submit">Valider</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal-input-post">
+        <div class="modal-content">
+            <h2>Ecrire une publication</h2>
+            <textarea name="new-pub" id="new-pub" placeholder="Entrez du texte ici"></textarea>
+            <div style="display: flex; justify-content: end;">
+                <div class="btn-submit">Envoyer</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="new-btn">
+        Nouveau Post
+    </div>
+
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
